@@ -8,6 +8,6 @@ Todos os códigos aqui se referem ao uso mais puro da linguagem, com propósito 
 São programas que não são demandados pelo professor. <span style="background-color: yellow;">Isto é, eu mesmo fui atrás e programei algo em C++ pra aprender por conta própria.</span> Por isso mesmo há uso de alguns ```namespaces``` aqui e acolá.
 
 ### UND (1, 2, 3) 🎯
-<span style="background-color: #ffb5b0;"> Programas feitos na disciplina, a partir das aulas de laboratório </span>. Recomendados aos alunos que cursarem a disciplina de LP1 futuramente. 
+<span style="background-color: #ffb5b0;"> Programas feitos na disciplina, a partir das aulas de laboratório </span>. Recomendados aos alunos que cursarem a disciplina de LP1 futuramente.  
 
 [ainda em construção]
