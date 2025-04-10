@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "mdc.h"
+#include "mdc.hpp"
 #include "mdc.cpp"
 
 int main(){

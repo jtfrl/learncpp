@@ -1,4 +1,4 @@
-#include "mdc.h"
+#include "mdc.hpp"
 
 void mdc(){
     int rest, x, y, n, temp;
