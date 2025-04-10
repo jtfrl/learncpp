@@ -20,19 +20,8 @@ int main() {
             rest = x%y;
             x = y;
             y = rest;
-            /*
-            while(true){
-                std::cout<<"MDC: "<<x<<"\n"; 
-                break;
-            }
-            */
-        } //laço não está executando inteiramente
-        //std::cout<<"MDC: "<<x<<"\n";
-
+        } 
+        std::cout<<"MDC: "<<y<<"\n";
     }
-    std::cout<<"MDC: "<<x<<"\n"; 
-    //quando está fora,
-    // calcula o do primeiro,
-    // mas não os dos demais
     return 0;
 }
