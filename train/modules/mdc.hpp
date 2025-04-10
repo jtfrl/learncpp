@@ -1,6 +1,6 @@
 #ifndef MDC_H
 #define MDC_H
 
-int mdc(int x, int y, int n);
+int mdc(int x, int y);
 
 #endif 

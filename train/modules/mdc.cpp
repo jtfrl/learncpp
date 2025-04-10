@@ -4,13 +4,13 @@
 #ifndef MDC_H
 #define MDC_H
 
-int mdc(int x, int y, int n);
+int mdc(int x, int y);
 
 #endif 
 
-int mdc(int x, int y, int n){
+int mdc(int x, int y){
     int rest, temp;
-    while(n--){
+ 
         if(y>x){
             temp = y; 
             y = x;
@@ -22,6 +22,6 @@ int mdc(int x, int y, int n){
             y = rest;
         } 
         return y;
-    }
+   
     return y; //linha adicionada para evitar erro de compilação
 }
