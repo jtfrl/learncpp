@@ -1,13 +1,15 @@
+#include <iostream>
 #include "mdc.hpp"
+
 #ifndef MDC_H
 #define MDC_H
 
-int mdc(int x, int y);
+int mdc(int x, int y, int n);
 
 #endif 
 
-int mdc(){
-    int rest, x, y, n, temp;
+int mdc(int x, int y, int n){
+    int rest, temp;
     while(n--){
         if(y>x){
             temp = y; 
@@ -19,7 +21,7 @@ int mdc(){
             x = y;
             y = rest;
         } 
-        std::cout<<"MDC: "<<y<<"\n";
+        return y;
     }
-    return 0;
+    return y; //linha adicionada para evitar erro de compilação
 }
