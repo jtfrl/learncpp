@@ -2,11 +2,11 @@
 #ifndef MDC_H
 #define MDC_H
 
-void mdc(int x, int y);
+int mdc(int x, int y);
 
 #ifndef MDC_H
 
-void mdc(){
+int mdc(){
     int rest, x, y, n, temp;
     std::cout<<"Digite o valor de n: ";
     std::cin>>n;
