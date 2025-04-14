@@ -38,14 +38,14 @@ Users can view the number of available seats for each type.
 ## Implementation:
 ### Create a Class ```Ticket```:
 
-Attributes: seatType (string), price (double), availableSeats (int).
-Methods: bookTickets(int numTickets), getAvailableSeats().
+Attributes: ```seatType``` (string), ```price``` (double), ```availableSeats``` (int).
+Methods: ```bookTickets```(```int numTickets```), ```getAvailableSeats()```.
 Create a Class Concert:
 
-Attributes: vipTicket, premiumTicket, regularTicket (all of type Ticket).
-Methods: viewAvailableSeats(), bookSeats(string seatType, int numTickets).
-Main Function:
+Attributes: ```vipTicket```, ```premiumTicket```, ```regularTicket``` (all of type Ticket).
+Methods: ```viewAvailableSeats()```, ```bookSeats```(string ```seatType, int ```numTickets```).
 
+### Main Function:
 Create an instance of the ```Concert class```.
 Provide a menu for the user to book tickets or view available seats.
 Handle user input and call the appropriate methods.
