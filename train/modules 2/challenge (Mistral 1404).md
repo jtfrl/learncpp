@@ -14,15 +14,15 @@ and calculate the total cost of their booking.
 
 ### Seat Types: There are three types of seats:
 
-VIP: Costs R$ 300 each.
-Premium: Costs R$ 200 each.
-Regular: Costs R$ 100 each.
+- VIP: Costs R$ 300 each.
+- Premium: Costs R$ 200 each.
+- Regular: Costs R$ 100 each.
 
 ### Available Seats:
 
-VIP: 20 seats
-Premium: 30 seats
-Regular: 50 seats
+- VIP: 20 seats
+- Premium: 30 seats
+- Regular: 50 seats
 
 ### Booking System:
 
@@ -43,7 +43,7 @@ Methods: ```bookTickets```(```int numTickets```), ```getAvailableSeats()```.
 Create a Class Concert:
 
 Attributes: ```vipTicket```, ```premiumTicket```, ```regularTicket``` (all of type Ticket).
-Methods: ```viewAvailableSeats()```, ```bookSeats```(string ```seatType, int ```numTickets```).
+Methods: ```viewAvailableSeats()```, ```bookSeats```(```string seatType, int numTickets```).
 
 ### Main Function:
 Create an instance of the ```Concert class```.
