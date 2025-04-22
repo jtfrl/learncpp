@@ -9,7 +9,7 @@ A sequência termina quando n chega a 1.
 
 O código conta quantas operações são necessárias para chegar a 1.
 */
-int count = 0;
+int count = 0; //acaba não sendo necessário; contagem de operações apenas com collatz
 
 int collatz(int n) {
     if(n!=1){
