@@ -2,7 +2,7 @@
 
 Códigos feitos na disciplina de Linguagens de Programação I, lecionada em Instituto Metrópole Digital da UFRN (IMD) em 2025.1. 
 ## Conteúdo
-Todos os códigos aqui se referem ao uso mais puro da linguagem, com propósito de aprendizagem (por isso, 'muletas' como o uso do ```namespace``` são evitadas). A seguir, uma descrição sobre as pastas
+Todos os códigos aqui se referem ao uso mais puro da linguagem, com propósito de aprendizagem (por isso, o uso do ```namespace``` é evitado, p. ex.). A seguir, uma descrição sobre as pastas
 
 ### Códigos de treino 🏋️
 São programas que não são demandados pelo professor. <text style="background-color: rbga(100, 30, 76, 0.5);">Isto é, eu mesmo fui atrás e programei algo em C++ pra aprender por conta própria.</text> Por isso mesmo há uso de alguns ```namespaces``` aqui e acolá.
@@ -14,6 +14,8 @@ Uso como referência, principalmente, o livro  STROUSTRUP, Bjarne. The C++ Progr
 
 #### Tópicos da undidade 1
 - Modulação;
-- Versionamento
+- Versionamento;
+- Recursão;
+- Classes;
 
 [ainda em construção]
