@@ -40,7 +40,8 @@ Users can view the number of available seats for each type.
 
 Attributes: ```seatType``` (string), ```price``` (double), ```availableSeats``` (int).
 Methods: ```bookTickets```(```int numTickets```), ```getAvailableSeats()```.
-Create a Class Concert:
+
+###  Create a Class Concert:
 
 Attributes: ```vipTicket```, ```premiumTicket```, ```regularTicket``` (all of type Ticket).
 Methods: ```viewAvailableSeats()```, ```bookSeats```(```string seatType, int numTickets```).
