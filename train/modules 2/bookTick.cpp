@@ -7,14 +7,12 @@ VIP: 20 seats
 Premium: 30 seats
 Regular: 50 seats
 
+Attributes: seatType (string), price (double), 
+availableSeats (int). Methods: bookTickets(int numTickets), getAvailableSeats().
+
 */
 
-const int MAX_TICK_VIP = 20; //em C++, as constantes vem nessa formatação
-const int MAX_TICK_PREMIUM = 30;
-const int MAX_TICK_REGULAR = 50;
-const int TOTAL_ING = 100;
-
-//Função para tomar o número de ingressos do usuário
+//adaptação de função: será adaptada com uma classe (criada em bookTick.hpp)
 int bookTick(int numTick){
     std::cout << "Ingressos disponíveis: " << TOTAL_ING - numTick<< std::endl;
     std::cout << "VIP: " << MAX_TICK_VIP - numTick<< std::endl;
@@ -41,3 +39,7 @@ int bookTick(int numTick){
     return 0; //retorna 0 se não houver ingressos disponíveis
     //a definir como vai ser trabalhado o vetor e o retorno dessa função
 }
+
+
+//classe para adaptação
+
