@@ -12,16 +12,7 @@ availableSeats (int). Methods: bookTickets(int numTickets), getAvailableSeats().
 
 */
 
-//adaptação de função: será adaptada com uma classe (criada em bookTick.hpp)
-int bookTick(int numTick){
-    std::cout << "Ingressos disponíveis: " << TOTAL_ING - numTick<< std::endl;
-    std::cout << "VIP: " << MAX_TICK_VIP - numTick<< std::endl;
-    std::cout << "Premium: " << MAX_TICK_PREMIUM - numTick<< std::endl;
-    std::cout << "Regular" << MAX_TICK_REGULAR - numTick<< std::endl;
-
-    //necessário adaptar linha acima
-    //as constantes devem mudar a cada vez que o número de ingressos mudar
-    //verificar se deve ser numTick em cada
+//adaptação: será adaptada com uma classe (criada em bookTick.hpp)
     std::cout << "Quantos ingressos você gostaria de reservar? ";
 
     std::vector<std::string> bookTick(numTick);
@@ -36,8 +27,24 @@ int bookTick(int numTick){
         return size;
     }
 
-    return 0; //retorna 0 se não houver ingressos disponíveis
-    //a definir como vai ser trabalhado o vetor e o retorno dessa função
+    return 0;
+
+    void getAvailableSeats(){
+        std::cout<<"INGRESSOS DISPONÍVEIS: "<<std::endl;
+        std::cout<<vip;
+        std::cout<<pre;
+        std::cout<<reg;
+        //testar pra ver se exibe
+    }
+    int bookTickets(int numTickets){
+        std::cout<<"Que tipo(s) de ingresso(s) você gostaria de reservar? "<<std::endl;
+        std::cout<<"V - VIP | P - PREMIUM | R - REGULAR"<<std::endl;
+        if((std::cin>>seatType)){
+            //só segue se o usuário digitar uma das letras; a definir implementação
+        }
+
+
+    }
 }
 
 
