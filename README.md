@@ -26,10 +26,10 @@ São pastas modularizações de programas, com objetivo de por em prática o que
 
 ## Como citar 
 ```
-@learncpp{<jtfrl><2025>,
-  author       = {<ROCHA, Jefferson Tafarel F.>},
-  title        = {<learncpp>},
-  school       = {<UFRN - Instituto Metrópole Digital>},
-  year         = {<2025>}
+@learncpp{jtfrl2025,
+  author       = {ROCHA, Jefferson Tafarel F.},
+  title        = {learncpp},
+  school       = {UFRN - Instituto Metrópole Digital},
+  year         = {2025}
 }
 ```
