@@ -30,7 +30,7 @@ void favorite::setAge(int age){
 int favorite::getcAge(){
     return m_age;
 }
-void favorite::setseriesYer(int seriesYear){
+void favorite::setseriesYear(int seriesYear){
     if (seriesYear>0)  m_seriesYear=seriesYear;
     std::cout<<"Digite um número válido"<<std::endl;
 }
