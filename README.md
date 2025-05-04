@@ -7,7 +7,10 @@ Todos os códigos aqui se referem ao uso mais puro da linguagem, com propósito 
 ### Códigos de treino 🏋️
 São programas que não são demandados pelo professor. <text style="background-color: rbga(100, 30, 76, 0.5);">Isto é, eu mesmo fui atrás e programei algo em C++ pra aprender por conta própria.</text> Por isso mesmo há uso de alguns ```namespaces``` aqui e acolá.
 
-Uso como referência, principalmente, o livro  STROUSTRUP, Bjarne. The C++ Programming Language. 4th ed. Boston: Addison-Wesley, 2013. Também consulto alguns tópicos no learncpp.com e em en.cppreference.com
+Uso como referência, principalmente, o livro STROUSTRUP, Bjarne. The C++ Programming Language. 4th ed. Boston: Addison-Wesley, 2013. Também consulto alguns tópicos no learncpp.com e em en.cppreference.com
+
+#### Pastas 'modules'
+São pastas modularizações de programas, com objetivo de por em prática o que é visto em aula na bibliografia (STROUSTRUP, Bjarne). 
 
 ### UND (1, 2, 3) 🎯
 <text style="background-color:rgba(255, 205, 176, 0.39);"> Programas feitos na disciplina, a partir das aulas de laboratório </text>. Recomendados aos alunos que cursarem a disciplina de LP1 futuramente.  
