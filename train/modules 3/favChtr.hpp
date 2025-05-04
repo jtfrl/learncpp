@@ -7,12 +7,17 @@ class favorite{
     int m_seriesYear=0;
 
     public:
-    favorite()=default;
+    //favorite()=default;
+    favorite(); //construtor padrão
     favorite(std::string character, std::string series, int age, int seriesYear);
 
     void setCharacter(std::string novoChtr);
     std::string getCharacter();
     void setSeries(std::string seriesName);
     std::string getSeries();
+    void setAge(int age);
+    int getcAge();
+    void setseriesYer(int seriesYear);
+    int getsYear();
 
 };

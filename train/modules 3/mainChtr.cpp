@@ -2,7 +2,7 @@
 #include "favChtr.hpp"
 
 int main(){
-    favorite lista("Shiv Roy", "Succession", 30, 2018); //cria uma variavel para a classe favorite
+    favorite lista("Satoru Gojo", "Jujutsu Kaisen", 0, 0); //cria uma variavel para a classe favorite
 
     std::cout<<"Personagem favorito: "<<lista.getCharacter()<<std::endl;
     std::cout<<"Série favorita: "<<lista.getSeries()<<std::endl;
