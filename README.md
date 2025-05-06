@@ -25,7 +25,7 @@ São pastas modularizações de programas, com objetivo de por em prática o que
 
 
 ## Como citar 
-```bibtex
+``` bibtex
 @learncpp{jtfrl2025,
   author       = {ROCHA, Jefferson Tafarel F.},
   title        = {learncpp},
