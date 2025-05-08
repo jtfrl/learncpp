@@ -2,11 +2,26 @@
 #include "favChtr.hpp"
 
 int main(){
-    favorite lista("Satoru Gojo", "Jujutsu Kaisen", 0, 0); //cria uma variavel para a classe favorite
+    favorite td("Rust Cohle", "True Detective", 29, 2014); //cria uma variavel para a classe favorite
+    favorite fb("The Priest", "Fleabg", 35, 2016); //cria uma variavel para a classe favorite
+    
+    std::cout<<"Personagem favorito: "<<td.getCharacter()<<std::endl;
+    std::cout<<"Série favorita: "<<td.getSeries()<<std::endl;
+    std::cout<<"Idade do personagem: "<<td.getcAge()<<std::endl;
+    std::cout<<"Ano (série): "<<td.getsYear()<<std::endl;
 
-    std::cout<<"Personagem favorito: "<<lista.getCharacter()<<std::endl;
-    std::cout<<"Série favorita: "<<lista.getSeries()<<std::endl;
-  //chama com a instância da classe: lista  
+    std::cout<<std::endl;
+  //chama com a instância da classe: td
+
+  std::cout<<"Personagem favorito: "<<fb.getCharacter()<<std::endl;
+  std::cout<<"Série favorita: "<<fb.getSeries()<<std::endl;
+  std::cout<<"Idade do personagem: "<<fb.getcAge()<<std::endl;
+  std::cout<<"Ano (série): "<<fb.getsYear()<<std::endl;
+
+  std::cout<<"Personagens adicionados: "<<favorite::countFav()<<std::endl;
+
+  //adicionar contagem filtrada por série 
+
 
     return 0;
 
