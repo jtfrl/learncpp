@@ -9,7 +9,7 @@ int main(){
     std::vector<int> cf=pascalTri(n, r);
 
     //iteração com os elementos
-    std::cout<<"Coeficientes: "<<std::endl;
+    std::cout<<"Coeficiente(s): "<<std::endl;
     for (int i_cf : cf){
         std::cout<<i_cf<<" ";
     }
