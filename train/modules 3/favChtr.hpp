@@ -6,6 +6,8 @@ class favorite{
     int m_age=0;
     int m_seriesYear=0;
     static int m_chtr;
+    static int m_sCount;
+    static std::vector<std::string> m_allSeries //vetor que armazena os nomes
 
     public:
     //favorite()=default;
@@ -21,5 +23,7 @@ class favorite{
     void setseriesYear(int seriesYear);
     int getsYear();
     static int countFav(); //deve ser estático
+    static int countSeries();
+    void displaySeries();
 
 };

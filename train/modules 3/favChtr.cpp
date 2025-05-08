@@ -2,6 +2,9 @@
 #include "favChtr.hpp"
 
 int favorite::m_chtr=0; //inicializa o contador de personagens
+int favorite::m_sCount=0; 
+std::vector<std::string> favorite::m_allSeries; //inicializa o estático de nomes
+
 
 favorite::favorite(std::string character, std::string series, int age, int seriesYear):
      m_character(character), m_series(series), m_age(age), m_seriesYear(seriesYear)
@@ -21,10 +24,16 @@ std::string favorite::getCharacter(){
 
 void favorite::setSeries(std::string seriesName){
     m_series=seriesName;
+    m_sCount++;
 }
 
 std::string favorite::getSeries(){
     return m_series;
+}
+
+void favorite::displaySeries(){
+    std::cout<<"Series Names"<<std::endl;
+    std::cout<<m_series<<std::endl;
 }
 
 void favorite::setAge(int age){
@@ -47,3 +56,8 @@ int favorite::getsYear(){
 int favorite::countFav(){
    return m_chtr;
 }
+
+int favorite::countSeries(){
+    return m_sCount;
+}
+

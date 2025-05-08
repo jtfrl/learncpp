@@ -19,7 +19,10 @@ int main(){
   std::cout<<"Ano (série): "<<fb.getsYear()<<std::endl;
 
   std::cout<<"Personagens adicionados: "<<favorite::countFav()<<std::endl;
-
+  std::cout<<"******************************"<<"\n";
+  std::cout<<"Séries adicionadas: "<<std::endl;
+  std::cout<<"Total: "<<favorite::countSeries()<<std::endl;
+  favorite::displaySeries();
   //adicionar contagem filtrada por série 
 
 
