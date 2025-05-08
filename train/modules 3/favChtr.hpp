@@ -5,6 +5,7 @@ class favorite{
     std::string m_series;
     int m_age=0;
     int m_seriesYear=0;
+    static int m_chtr;
 
     public:
     //favorite()=default;
@@ -17,7 +18,8 @@ class favorite{
     std::string getSeries();
     void setAge(int age);
     int getcAge();
-    void setseriesYer(int seriesYear);
+    void setseriesYear(int seriesYear);
     int getsYear();
+    static int countFav(); //deve ser estático
 
 };
