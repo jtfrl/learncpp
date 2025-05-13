@@ -31,9 +31,9 @@ std::string favorite::getSeries(){
     return m_series;
 }
 
-void favorite::displaySeries(){
+std::string favorite::displaySeries(){
     std::cout<<"Series Names"<<std::endl;
-    std::cout<<m_series<<std::endl;
+    return m_series;
 }
 
 void favorite::setAge(int age){

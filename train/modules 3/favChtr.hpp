@@ -1,5 +1,5 @@
 #include <string> //necessário para usar string
-
+#include <vector>
 class favorite{
     std::string m_character;
     std::string m_series;
@@ -7,7 +7,7 @@ class favorite{
     int m_seriesYear=0;
     static int m_chtr;
     static int m_sCount;
-    static std::vector<std::string> m_allSeries //vetor que armazena os nomes
+    static std::vector<std::string> m_allSeries; //vetor que armazena os nomes
 
     public:
     //favorite()=default;
@@ -24,6 +24,6 @@ class favorite{
     int getsYear();
     static int countFav(); //deve ser estático
     static int countSeries();
-    void displaySeries();
+    std::string displaySeries(); //dessa forma, passa a pertencer entre os métodos da classe
 
 };
