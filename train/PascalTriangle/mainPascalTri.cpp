@@ -1,6 +1,8 @@
 #include <iostream>
 #include "pascalTri.hpp"
 
+
+//INCLUIR PRINT PASCAL
 int main(){
     int n, r=0;
     std::cout<<"Digite um número inteiro: "<<std::endl;

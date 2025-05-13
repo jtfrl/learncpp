@@ -1,3 +1,5 @@
+CPP
+
 #include <iostream>
 #include <vector>
 #include "pascalTri.hpp"
@@ -76,8 +78,6 @@ vector <int> pascalTri(int num, int r){ //valor zero para r não serve aqui
             std::cout<<std::endl;
          }
 
-
-
        //necessário estar após; a função deixa de rodar aqui
        count++;
        return coef; 
@@ -85,6 +85,25 @@ vector <int> pascalTri(int num, int r){ //valor zero para r não serve aqui
     }
 }
 
+
+//quase lá: erro para alocar cada linha aqui
+//mais em: https://www.geeksforgeeks.org/pascal-triangle/
+
+vector<vector <int>> printPascal(int num){ //vetor de vetores
+    vector<vector <int>> mat; //vai abrigar os coeficientes
+
+    for (int l=0; l<num; l++){ //l é linha
+        vector <int> arr;
+
+        for (int k=0; k<=l; k++){
+            vector <int> pt=pascalTri(l, k);
+            arr.push_back(pt);
+        }
+        mat.push_back(arr);
+    }
+
+    return mat;
+}
 
 
 
