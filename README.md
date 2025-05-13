@@ -10,7 +10,10 @@ São programas que não são demandados pelo professor. <text style="background-
 Uso como referência, principalmente, o livro STROUSTRUP, Bjarne. The C++ Programming Language. 4th ed. Boston: Addison-Wesley, 2013. Também consulto alguns tópicos no learncpp.com e em en.cppreference.com
 
 #### Pastas 'modules'
-São pastas modularizações de programas, com objetivo de por em prática o que é visto em aula na bibliografia (STROUSTRUP, Bjarne). 
+São pastas modularizações de programas, com objetivo de por em prática o que é visto em aula e na bibliografia:
+
+* STROUSTRUP, Bjarne - _The C++ programming language_
+* SCHILDT, H. - _C++: The Complete Reference_
 
 ### UND (1, 2, 3) 🎯
 <text style="background-color:rgba(255, 205, 176, 0.39);"> Programas feitos na disciplina, a partir das aulas de laboratório </text>. Recomendados aos alunos que cursarem a disciplina de LP1 futuramente.  
