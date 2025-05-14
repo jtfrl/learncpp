@@ -12,8 +12,8 @@ Uso como referência, principalmente, o livro STROUSTRUP, Bjarne. The C++ Progra
 #### Pastas 'modules'
 São pastas modularizações de programas, com objetivo de por em prática o que é visto em aula e na bibliografia:
 
-* STROUSTRUP, Bjarne - _The C++ programming language_
-* SCHILDT, H. - _C++: The Complete Reference_
+* STROUSTRUP, Bjarne._The C++ programming language_
+* SCHILDT, H. _C++: The Complete Reference_
 
 ### UND (1, 2, 3) 🎯
 <text style="background-color:rgba(255, 205, 176, 0.39);"> Programas feitos na disciplina, a partir das aulas de laboratório </text>. Recomendados aos alunos que cursarem a disciplina de LP1 futuramente.  
@@ -23,6 +23,15 @@ São pastas modularizações de programas, com objetivo de por em prática o que
 - Versionamento;
 - Recursão;
 - Classes;
+
+#### Tópicos da undidade 2
+- Sobrecarga de funções;
+- Operador overloading;
+- Passagem por:
+  - referência; e
+  - valor.
+
+
 
 [ainda em construção]
 
