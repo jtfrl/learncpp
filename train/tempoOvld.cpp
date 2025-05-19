@@ -11,9 +11,10 @@ class Tempo {
       friend std::ostream& operator<< (std::ostream &out, Tempo &t);
 };
 
+//em cpp
 Tempo::Tempo() : horas(0),  minutos(0), segundos(0) {}//construtor deve ser definido
 
-//em cpp
+
 Tempo::Tempo (short h, short m, short s): horas(h), minutos(m), segundos(s){
 }
 
