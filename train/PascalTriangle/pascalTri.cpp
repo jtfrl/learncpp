@@ -1,5 +1,3 @@
-CPP
-
 #include <iostream>
 #include <vector>
 #include "pascalTri.hpp"
@@ -10,7 +8,8 @@ using namespace std;
 #define PASCAL
 
 int fact(int num);
-vector<int> pascalTri(int num, int r=0);
+//vector<int> pascalTri(int num, int r=0);
+std::vector<std::vector<int>> printPascal(int num);
 
 #endif
 
@@ -33,18 +32,34 @@ int fact(int num){
 FORMULA DO COEFICIENTE DO TRIANGULO DE PASCAL
 
 pascCoef=fact(num)/(fact(r)*(fact(num-r))
-
-dessa forma, r também deve ser parâmetro
-'num' precisa assumir zero para a execução da próxima função
  
 */
 
+
+int biCoef(int n, int k){
+    if(k==0 || k==n) return 1;
+    return biCoef(n-1, k-1) + biCoef(n-1, k);
+}
+
+//gerador de linha 
+vector <int> linePascal(int num, int r){
+    vector<int> line;
+    for(int x=0;x<=r;x++){
+        line.push_back(biCoef(r, x));
+    }
+    return line;
+}
+
 vector <int> pascalTri(int num, int r){ //valor zero para r não serve aqui
-    
+    vector <int> line;
     int count=0;
     if (r>num){
         count++;
-         return vector<int>(); //precisa vir abaixo
+        return vector<int>(); //precisa vir abaixo
+    }
+
+    if (num==r){
+        return{};
     }
     
     vector <int> baseVect(1,1); //velor com um elemento e o elemento é 1. 
@@ -53,50 +68,31 @@ vector <int> pascalTri(int num, int r){ //valor zero para r não serve aqui
         count++;
         return baseVect;
     }
+     
+    //parte restante do triângulo
 
-    else{
-        vector<int> coef; //coeficientes
-        int pascCoef=fact(num)/(fact(r)*(fact(num-r)));
-        coef.push_back(pascCoef); //acrescenta elementos no vetor
+    //em ajuste a partir daqui
 
-      vector<int> nextCoef=pascalTri(num, r+1); //cálculo recursivo
-      coef.insert(coef.end(), nextCoef.begin(), nextCoef.end());
-      count++;
-          //como a chamada é recursiva, r vai iterar até chegar em num
-    
-         if(num!=1){
-            for(int j=1;j<num;j++){
-                vector<int> pastCoef; //coeficientes
-                int pascCoef=fact(num)/(fact(r)*(fact(num-r))); 
-                //erro de segmentação caso na linha acima venha j em vez de i
-                pastCoef.push_back(pascCoef); 
-                    for (int i: pastCoef){
-                    std::cout<<i<<" ";
-                }
-            }
-            
-            std::cout<<std::endl;
-         }
+    vector<int> current=linePascal(num, r);
+    vector<vector<int>> triRes=pascalTri(num, r+1);
+    triRes.insert(triRes.begin(), current);
 
-       //necessário estar após; a função deixa de rodar aqui
-       count++;
-       return coef; 
-      
-    }
+    return triRes;
+ 
 }
 
 
 //quase lá: erro para alocar cada linha aqui
 //mais em: https://www.geeksforgeeks.org/pascal-triangle/
 
-vector<vector <int>> printPascal(int num){ //vetor de vetores
+vector<vector <int>> nPascalTri(int num){ //vetor de vetores
     vector<vector <int>> mat; //vai abrigar os coeficientes
 
     for (int l=0; l<num; l++){ //l é linha
         vector <int> arr;
 
         for (int k=0; k<=l; k++){
-            vector <int> pt=pascalTri(l, k);
+            int pt=fact(num);
             arr.push_back(pt);
         }
         mat.push_back(arr);
@@ -105,7 +101,12 @@ vector<vector <int>> printPascal(int num){ //vetor de vetores
     return mat;
 }
 
-
-
-
-
+void printPTri(vector<vector <int>> mat, int num){
+    mat=nPascalTri(num);
+    for(int m=0;m<mat.size();m++){
+        for(int n=0;n<mat.size();n++){
+            std::cout<<mat[m][n]<<" ";
+        }
+        std::cout<<std::endl;
+    }
+}
