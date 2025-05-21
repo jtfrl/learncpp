@@ -11,8 +11,8 @@ auto somar(int x, float y){ return x+y;} //tipos diferentes podem ser usados
 int main(){
     
     std::cout<<somar(13,12)<<std::endl;
-    std::cout<<somar(13233636, 2556669)<<std::endl; //deve haver f para reforçar que são dados em float
-    std::cout<<somar(25.22f, 27.35f)<<std::endl;
+    std::cout<<somar(13233636, 2556669)<<std::endl; 
+    std::cout<<somar(25.22f, 27.35f)<<std::endl; //deve haver f para reforçar que são dados em float
     std::cout<<somar(25.22, 13.56)<<std::endl;
     std::cout<<somar(25, 13.56f)<<std::endl;
 
