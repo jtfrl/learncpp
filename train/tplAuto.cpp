@@ -1,13 +1,30 @@
 #include <iostream>
+#include <cmath>
 
-char max(char a, char b) { return ( a > b) ? a : b; }
-int max(int a, int b) { return ( a > b) ? a : b; }
-float max(float a, float b) { return ( a > b) ? a : b; }
-double max(double a, double b) { return ( a > b) ? a : b; }
-auto max(long long int a, long long int b)  { return ( a > b) ? a : b; }
+int somar (int x, int y){ return x+y;}
+//auto somar (auto x, auto y){ return x+y;} auto não é permitido no campo de parâmetro
+auto somar (long long int x, long long int y){ return x+y;} 
+float somar (float x, float y){ return x+y;}
+double somar (double x, double y){ return x+y;}
+//auto somar(int x, float y){ return x+y;} //tipos diferentes podem ser usados
 
-//em template para todas
-Template <typename T>
-	T max(T a, T b) {
-	return (a > b) ? a : b;
+
+template <typename T>
+    T somar(T a, T b){
+        return a+b;
+    }
+
+auto somar(int x, float y){ return x+y;}
+ //deve vir abaixo para funcionar com template
+
+int main(){
+
+    int b=somar(4,5);
+	std::cout<<b<<std::endl;
+    auto c=somar(4, 4.8f);
+	std::cout<<c<<std::endl;
+
+    somar(45988895, 66966652);
+
+    return 0;
 }
