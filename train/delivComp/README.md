@@ -1,4 +1,3 @@
-markdown
 # C++ Class Template Challenge: Delivery Company Inventory
 
 _Challenge created originally by Deepseek in 2025.05.27_
