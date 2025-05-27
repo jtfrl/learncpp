@@ -62,6 +62,7 @@ void DeliveryManager<T>::addItem(const T& item){
 //implementing for displayInventory
 template<class T>
 void DeliveryManager<T>::displayInventory() const {
+    std::cout<<std::endl;
     size_t i=0;
     //for(size_t i=0; i<inventory.size(); ++i){
     for (const auto& item: inventory){
@@ -69,6 +70,7 @@ void DeliveryManager<T>::displayInventory() const {
         ++i;
     }
     //it should use what addItem must have 
+    std::cout<<std::endl;
 }
 
 
@@ -76,5 +78,10 @@ int main() {
     waterGal wg{10.5, 20.0, 5.0, "BrandA"};
     DeliveryManager<waterGal> manager(wg);
     manager.displayInventory();
+
+    gasCyl gc{12, 65.3, "ISO-4000", "BomGas"};
+    DeliveryManager<gasCyl> manager2(gc);
+    manager2.displayInventory();
+
     return 0;
 }
