@@ -71,10 +71,11 @@ void DeliveryManager<T>::displayInventory() const {
     //it should use what addItem must have 
 }
 
-
+/*
 int main() {
     waterGal wg{10.5, 20.0, 5.0, "BrandA"};
     DeliveryManager<waterGal> manager(wg);
     manager.displayInventory();
     return 0;
 }
+    */
