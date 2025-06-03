@@ -105,3 +105,16 @@ g++ -std=c++11 main.cpp -o delivery_app
 - Structured data handling
 
 - Real-world system modeling
+
+
+## Extra exploring
+
+This program is beeing developed a bit before I started learning about classes. So, the table below gives a correspondence on the program tested (**not necessarially part of the final objective in this folder** ```delivComp```) and topic or purpose it was developed to.
+
+| Code                  | Description                                   | 
+|:-------------         |:--------------                               |
+| DeliveryManager.h     | Header file, with some exploring on function <br> implementation and template syntax <br> implementation and template syntax      
+| superMaterial.cpp     | Inheiritance (Material class is the super one)     |
+| test01.cpp                | I wanted to check if something was working fine at the <br> header file (DeliveryManager.h)                              |
+| test02.cpp            |   Testing overriding (probably gonna change its name)                     |
+

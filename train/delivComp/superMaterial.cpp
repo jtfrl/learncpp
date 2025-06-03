@@ -15,7 +15,8 @@ class Material{
             vl=u_vl;
             price=u_price;
         };
-    //template cumpre a função de colocar classes nos parâmetros de função
+    //template cumpre a função de colocar classes 
+    //nos parâmetros de função
         template<class C>
         void addItem(const C& item);
         
@@ -35,9 +36,9 @@ class Material{
 class waterGal : public Material{
     private:
         std::string brand;
-        double weight; //definida fora do escopo de Material
+        double weight; //propria
 
-    public: //em ajuste
+    public: 
 
 
         //construtor precisa de definição padrão
