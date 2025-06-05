@@ -1,6 +1,7 @@
 # learncpp ![Static Badge](https://img.shields.io/badge/learning-black?style=plastic&logo=cplusplus&logoColor=blue&logoSize=auto&labelColor=black&color=004012)
 
-Códigos feitos na disciplina de Linguagens de Programação I, lecionada em Instituto Metrópole Digital da UFRN (IMD) em 2025.1. 
+Códigos feitos na disciplina de Linguagens de Programação I, lecionada em Instituto Metrópole Digital da UFRN (IMD) em 2025.1, lecionada por @danilocurvelo.
+
 ## Conteúdo
 Todos os códigos aqui se referem ao uso mais puro da linguagem, com propósito de aprendizagem (por isso, o uso do ```namespace``` é evitado, p. ex.). A seguir, uma descrição sobre as pastas
 
