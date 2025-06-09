@@ -60,7 +60,7 @@ class Retangulo : public Forma {
 
         
     friend std::istream& operator>>(std::istream &in, Retangulo &varIn);
-    friend std::ostream& operator<<(std::istream& out, Retangulo& varOut);
+    friend std::ostream& operator<<(std::istream& out, const Retangulo& varOut);
 };
 
         std::istream& operator>>(std::istream &in, Vetor2D &varIn){
@@ -69,14 +69,9 @@ class Retangulo : public Forma {
         }
         
         std::ostream& operator<<(std::ostream& out, const Retangulo& varOut){
-            out<<"Retângulo com largura "<<varOut.largura<<" e altura"<<varOut.altura<<std::endl;
+            out<<"Retângulo com largura "<<varOut.altura<<" e altura"<<varOut.largura<<std::endl;
             return out;
         }
-
-/*
-
-
-*/
 
 
 /*
