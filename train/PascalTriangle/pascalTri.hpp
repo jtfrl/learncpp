@@ -5,9 +5,9 @@
 
 //using namespace std;
 
-int fact(int num);
-//std::vector<int> pascalTri(int num, int r=0);
-std::vector<std::vector<int>> nPascalTri(int num);
-void printPTri(vector<vector <int>> mat, int num);
+int biCoef(int n, int k);
+std::vector<int> linePascal(int n);
+std::vector<std::vector <int>> pascalTri(int numRows);
+void printTriangle(const std::vector<std::vector<int>>& triangle);
 
 #endif

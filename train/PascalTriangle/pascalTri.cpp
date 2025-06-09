@@ -1,112 +1,80 @@
 #include <iostream>
 #include <vector>
+#include <iomanip>
 #include "pascalTri.hpp"
 
 using namespace std;
 
-#ifndef PASCAL
-#define PASCAL
-
-int fact(int num);
-//vector<int> pascalTri(int num, int r=0);
-std::vector<std::vector<int>> printPascal(int num);
-
-#endif
-
 /*
-PROBLEMAS
-:> necesssária uma função recursiva que exiba cada linha do triangulo
-:>> triangulo só está funcionando para o valor num, mas não para o intervalo
-de 1 até num
-
-*/
-
 //função que calcula fatorial
 int fact(int num){
     if(num==1 || num==0) return 1; //evita estouro de pilha
     else
         return num*(fact(num-1));
-} //num=n
+}
+    */
 
 /*
 FORMULA DO COEFICIENTE DO TRIANGULO DE PASCAL
-
 pascCoef=fact(num)/(fact(r)*(fact(num-r))
- 
 */
-
 
 int biCoef(int n, int k){
     if(k==0 || k==n) return 1;
     return biCoef(n-1, k-1) + biCoef(n-1, k);
-}
+} //calcula coeficientes sem precisar de fact(num)
 
-//gerador de linha 
-vector <int> linePascal(int num, int r){
+
+std::vector<int> linePascal(int n) {  // toma apenas o número de linhas
     vector<int> line;
-    for(int x=0;x<=r;x++){
-        line.push_back(biCoef(r, x));
+    for(int k = 0; k <= n; k++) {
+        line.push_back(biCoef(n, k));
     }
     return line;
 }
 
-vector <int> pascalTri(int num, int r){ //valor zero para r não serve aqui
-    vector <int> line;
-    int count=0;
-    if (r>num){
-        count++;
-        return vector<int>(); //precisa vir abaixo
-    }
 
-    if (num==r){
-        return{};
-    }
+std::vector<std::vector <int>> pascalTri(int numRows){ //valor zero para r não serve aqui
+    if(numRows<=0) return std::vector<std::vector<int>>();
+    if(numRows==1) return {{1}};
     
-    vector <int> baseVect(1,1); //velor com um elemento e o elemento é 1. 
+    //mostra o triângulo anterior
+  std::vector<std::vector<int>> prevTri=pascalTri(numRows-1);
+    //nova linha
+  prevTri.push_back(linePascal(numRows-1));
 
-    if(num==1){
-        count++;
-        return baseVect;
-    }
-     
-    //parte restante do triângulo
-
-    //em ajuste a partir daqui
-
-    vector<int> current=linePascal(num, r);
-    vector<vector<int>> triRes=pascalTri(num, r+1);
-    triRes.insert(triRes.begin(), current);
-
-    return triRes;
+  return prevTri;
  
 }
+    
 
-
-//quase lá: erro para alocar cada linha aqui
 //mais em: https://www.geeksforgeeks.org/pascal-triangle/
-
-vector<vector <int>> nPascalTri(int num){ //vetor de vetores
-    vector<vector <int>> mat; //vai abrigar os coeficientes
-
-    for (int l=0; l<num; l++){ //l é linha
-        vector <int> arr;
-
-        for (int k=0; k<=l; k++){
-            int pt=fact(num);
-            arr.push_back(pt);
+/* versão com triangulo retangulo
+void printTriangle(const std::vector<std::vector<int>>& triangle) {
+    for (const auto& row : triangle) {
+        for (int val : row) {
+            std::cout<<" "<<val<<" ";
         }
-        mat.push_back(arr);
+        std::cout << std::endl;
     }
-
-    return mat;
 }
+*/
 
-void printPTri(vector<vector <int>> mat, int num){
-    mat=nPascalTri(num);
-    for(int m=0;m<mat.size();m++){
-        for(int n=0;n<mat.size();n++){
-            std::cout<<mat[m][n]<<" ";
+void printTriangle(const std::vector<std::vector<int>>& triangle) {
+    int maxRow=triangle.size();
+    for (size_t i=0; i<triangle.size();i++){
+        for(long unsigned int space=0;space<(maxRow-i-1)*2;space++){
+            std::cout<<" ";
+        }
+    
+
+        for (size_t j=0; j<triangle[i].size(); j++){
+            std::cout<<std::setw(3)<<triangle[i][j]<<" ";
         }
         std::cout<<std::endl;
     }
+
 }
+
+
+
