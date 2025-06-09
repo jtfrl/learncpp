@@ -41,7 +41,17 @@ class Quadrado : public Forma{
             }
         }
 
+    friend std::ostream& operator<<(std::ostream& out, const Quadrado& varOut);
+
+
 };
+
+        
+    
+    std::ostream& operator<<(std::ostream& out, const Quadrado& varOut){
+        out<<"Quadrado com lado "<<varOut.lado<<"."<<std::endl;
+        return out;
+    }
 
 
 

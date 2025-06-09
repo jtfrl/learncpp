@@ -59,17 +59,17 @@ class Retangulo : public Forma {
         }
 
         
-    friend std::istream& operator>>(std::istream &in, Retangulo &varIn);
-    friend std::ostream& operator<<(std::istream& out, const Retangulo& varOut);
+    //friend std::istream& operator>>(std::istream &in, Retangulo &varIn);
+    friend std::ostream& operator<<(std::ostream& out, const Retangulo& varOut);     
 };
-
+        /*
         std::istream& operator>>(std::istream &in, Vetor2D &varIn){
             in>>varIn.x>>varIn.y;
             return in;
-        }
-        
+        }//função não chamada em main
+        */
         std::ostream& operator<<(std::ostream& out, const Retangulo& varOut){
-            out<<"Retângulo com largura "<<varOut.altura<<" e altura"<<varOut.largura<<std::endl;
+            out<<"Retângulo com largura "<<varOut.altura<<" e altura "<<varOut.largura<<"."<<std::endl;
             return out;
         }
 
