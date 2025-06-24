@@ -35,7 +35,7 @@ Programas feitos na disciplina, a partir das aulas de laboratório. Recomendados
 
 #### Unidade 3: projeto da disciplina 
 
-[!WELL BE RIGHT BACK](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2FvMGkxczk1NzJsNHkyaTZybHAwa3BqZzMwZHhpeWwyMnpyd28wZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TGvKFTbhUSzsCI7lgQ/giphy.gif)
+![WELL BE RIGHT BACK](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2FvMGkxczk1NzJsNHkyaTZybHAwa3BqZzMwZHhpeWwyMnpyd28wZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TGvKFTbhUSzsCI7lgQ/giphy.gif)
 
 ## Como citar 
 ``` bibtex
