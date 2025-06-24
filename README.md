@@ -6,18 +6,14 @@ Códigos feitos na disciplina de Linguagens de Programação I, lecionada em Ins
 Todos os códigos aqui se referem ao uso mais puro da linguagem, com propósito de aprendizagem (por isso, o uso do ```namespace``` é evitado, p. ex.). A seguir, uma descrição sobre as pastas
 
 ### Códigos de treino 🏋️
-São programas que não são demandados pelo professor. <span style="background-color: rbga(100, 30, 76, 0.5);" Isto é, eu mesmo fui atrás e programei algo em C++ pra aprender por conta própria. Por isso mesmo há uso de alguns ```namespaces``` aqui e acolá. </span> Uso como referência, principalmente, o livro STROUSTRUP, Bjarne. The C++ Programming Language. 4th ed. Boston: Addison-Wesley, 2013. Também consulto alguns tópicos no learncpp.com e em en.cppreference.com
-São programas que não são demandados pelo professor. Isto é, eu mesmo fui atrás e programei algo em C++ pra aprender por conta própria. Por isso mesmo há uso de alguns ```namespaces``` aqui e acolá. Uso como referência, principalmente, o livro STROUSTRUP, Bjarne. The C++ Programming Language. 4th ed. Boston: Addison-Wesley, 2013. Também consulto alguns tópicos no learncpp.com e em en.cppreference.com
-
-<!-- <span style="color:red;">your text here > </span> -->
+São programas que não são demandados pelo professor. Isto é, eu mesmo fui atrás e programei algo em C++ pra aprender por conta própria. Por isso mesmo há uso de alguns ```namespaces``` aqui e acolá. Uso como referência o livro STROUSTRUP, Bjarne. (_abaixo_), **além de, claro, notas de aula**. Também consulto alguns tópicos no learncpp.com e em en.cppreference.com. 
 
 #### Pastas 'modules'
 São pastas modularizações de programas, com objetivo de por em prática o que é visto em aula e na bibliografia:
-@@ -17,35 +16,35 @@
-* SCHILDT, H. _C++: The Complete Reference_
+- SCHILDT, H. _C++: The Complete Reference_
+- STROUSTRUP, Bjarne. The C++ Programming Language. 4th ed. Boston: Addison-Wesley, 2013.
 
 ### UND (1, 2, 3) 🎯
-<text style="background-color:rgba(255, 205, 176, 0.39);"> Programas feitos na disciplina, a partir das aulas de laboratório </text>. Recomendados aos alunos que cursarem a disciplina de LP1 futuramente.  
 Programas feitos na disciplina, a partir das aulas de laboratório. Recomendados aos alunos que cursarem a disciplina de LP1 futuramente.  
 
 #### Tópicos da undidade 1
@@ -30,14 +26,16 @@ Programas feitos na disciplina, a partir das aulas de laboratório. Recomendados
 - Sobrecarga de funções;
 - Operador overloading;
 - Passagem por:
-- referência; e
-- valor.
+    - referência; e
+    - valor.
 - Template;
 - Herança de classes;
+- TADs;
+- Biblioteca STL;
 
+#### Unidade 3: projeto da disciplina 
 
-[ainda em construção]
-
+[!WELL BE RIGHT BACK](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2FvMGkxczk1NzJsNHkyaTZybHAwa3BqZzMwZHhpeWwyMnpyd28wZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TGvKFTbhUSzsCI7lgQ/giphy.gif)
 
 ## Como citar 
 ``` bibtex
