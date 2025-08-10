@@ -23,7 +23,7 @@ class Father{
         std::cout<<"teste de classe pai"<<std::endl;
     }
     
-    std::string seeData() const{ //?? porque é importante ter um const aqui?
+    std::string seeData() const{ //const impede que o dado seja alterado
         return data;
     }
     
