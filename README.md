@@ -11,7 +11,7 @@ São programas que não são demandados pelo professor. Isto é, eu mesmo fui at
 #### Pastas 'modules'
 São pastas modularizações de programas, com objetivo de por em prática o que é visto em aula e na bibliografia:
 - SCHILDT, H. _C++: The Complete Reference_
-- STROUSTRUP, Bjarne. The C++ Programming Language. 4th ed. Boston: Addison-Wesley, 2013.
+- STROUSTRUP, Bjarne. _The C++ Programming Language._ 4th ed. Boston: Addison-Wesley, 2013.
 
 ### UND (1, 2, 3) 🎯
 Programas feitos na disciplina, a partir das aulas de laboratório. Recomendados aos alunos que cursarem a disciplina de LP1 futuramente.  
@@ -35,7 +35,7 @@ Programas feitos na disciplina, a partir das aulas de laboratório. Recomendados
 
 #### Unidade 3: projeto da disciplina 
 
-![WELL BE RIGHT BACK](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExa2FvMGkxczk1NzJsNHkyaTZybHAwa3BqZzMwZHhpeWwyMnpyd28wZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TGvKFTbhUSzsCI7lgQ/giphy.gif)
+Recomendo que veja um dos projetos finais da disciplina: [DNA PROFILER](https://github.com/jtfrl/dna-profiler/). Todas as especificações (e possíveis mudanças futuras) estão lá. 
 
 ## Como citar 
 ``` bibtex
